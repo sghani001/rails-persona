@@ -2,7 +2,7 @@
 
 > Model-level behavioral analytics for Rails — own your data, zero external services.
 
-[![Gem Version](https://badge.fury.io/rb/rails-persona.svg)](https://badge.fury.io/rb/rails-persona)
+[![Gem Version](https://img.shields.io/gem/v/rails-persona.svg)](https://rubygems.org/gems/rails-persona)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 **rails-persona** is a lightweight Rails gem that adds first-class behavioral tracking directly to your ActiveRecord models. Unlike [ahoy](https://github.com/ankane/ahoy), which is focused on HTTP visit and page-view tracking, rails-persona is built for **model-level action tracking** — understanding *what your users actually do* in your app, not just what pages they visit.
