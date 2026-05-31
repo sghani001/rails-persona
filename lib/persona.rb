@@ -1,6 +1,9 @@
 require "persona/version"
-require "persona/railtie" if defined?(Rails)
 require "persona/configuration"
+require "persona/railtie" if defined?(Rails)
+require "persona/pruner"
+require "persona/async_tracker"
+require "persona/summary"
 require "persona/query"
 require "persona/trackable"
 
