@@ -3,7 +3,7 @@ class CreatePersonaEvents < ActiveRecord::Migration[7.0]
     create_table :persona_events do |t|
       t.references :trackable, polymorphic: true, null: false, index: true
       t.string     :action,    null: false
-      t.jsonb      :metadata,  null: false, default: {}
+      t.text       :metadata,  null: false, default: "{}"
 
       t.timestamps
     end

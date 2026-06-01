@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.4] - 2026-06-01
+### Fixed
+- Replace `t.jsonb` with `t.text` in migration for SQLite compatibility (fixes #10)
+
 ## [0.2.3] - 2026-06-01
 ### Fixed
 - Add `tasks/**/*` to gemspec files list so `persona_tasks.rake` is packaged with the gem (fixes #8)
