@@ -9,6 +9,10 @@ module Persona
       end
     end
 
+    initializer "persona.autoload_paths" do |app|
+      app.config.autoload_paths << File.expand_path("../../app/models", __dir__)
+    end
+
     rake_tasks do
       load File.expand_path("../../tasks/persona_tasks.rake", __dir__)
     end

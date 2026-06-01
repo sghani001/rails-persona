@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.5] - 2026-06-01
+### Fixed
+- Add gem app/ directory to Rails autoload paths so PersonaEvent is accessible (fixes #12)
+
 ## [0.2.4] - 2026-06-01
 ### Fixed
 - Replace `t.jsonb` with `t.text` in migration for SQLite compatibility (fixes #10)
