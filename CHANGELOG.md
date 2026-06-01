@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.3] - 2026-06-01
+### Fixed
+- Add `tasks/**/*` to gemspec files list so `persona_tasks.rake` is packaged with the gem (fixes #8)
+
 ## [0.2.2] - 2026-06-01
 ### Fixed
 - Correct `File.expand_path` depth in Railtie for both rake task and migrations path (fixes #5)
