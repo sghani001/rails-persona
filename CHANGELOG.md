@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.2] - 2026-06-01
+### Fixed
+- Correct `File.expand_path` depth in Railtie for both rake task and migrations path (fixes #5)
+
 ## [0.2.1] - 2026-06-01
 ### Fixed
 - Replace `config.paths` in Railtie with `File.expand_path` to fix `NoMethodError` on boot (fixes #1)
