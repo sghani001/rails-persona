@@ -9,7 +9,7 @@ module Persona
       end
     end
 
-    initializer "persona.autoload_paths" do |app|
+    config.before_initialize do |app|
       app.config.autoload_paths << File.expand_path("../../app/models", __dir__)
     end
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.6] - 2026-06-01
+### Fixed
+- Use `config.before_initialize` instead of initializer for autoload_paths to avoid FrozenError in Rails 7 (fixes #14)
+
 ## [0.2.5] - 2026-06-01
 ### Fixed
 - Add gem app/ directory to Rails autoload paths so PersonaEvent is accessible (fixes #12)
