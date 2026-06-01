@@ -3,6 +3,7 @@
 > Model-level behavioral analytics for Rails — own your data, zero external services.
 
 [![Gem Version](https://img.shields.io/gem/v/rails-persona.svg)](https://rubygems.org/gems/rails-persona)
+[![Downloads](https://img.shields.io/gem/dt/rails-persona.svg)](https://rubygems.org/gems/rails-persona)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Rails](https://img.shields.io/badge/Rails-7.0%2B-red)
 ![SQLite](https://img.shields.io/badge/SQLite-compatible-blue)
