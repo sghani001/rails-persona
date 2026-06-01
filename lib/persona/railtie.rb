@@ -9,8 +9,9 @@ module Persona
       end
     end
 
-    config.before_initialize do |app|
-      app.config.autoload_paths << File.expand_path("../../app/models", __dir__)
+    initializer "persona.autoload_paths", before: :set_autoload_paths do |app|
+      app.config.autoload_paths  << File.expand_path("../../app/models", __dir__)
+      app.config.eager_load_paths << File.expand_path("../../app/models", __dir__)
     end
 
     rake_tasks do

@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.7] - 2026-06-01
+### Fixed
+- Use `before: :set_autoload_paths` initializer ordering to avoid FrozenError when adding to autoload_paths (fixes #14)
+
 ## [0.2.6] - 2026-06-01
 ### Fixed
 - Use `config.before_initialize` instead of initializer for autoload_paths to avoid FrozenError in Rails 7 (fixes #14)
