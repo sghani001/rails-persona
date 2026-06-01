@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1] - 2026-06-01
+### Fixed
+- Replace `config.paths` in Railtie with `File.expand_path` to fix `NoMethodError` on boot (fixes #1)
+- Add missing `tasks/persona_tasks.rake` that was referenced but never created (fixes #2)
+- Fix rake task load path using `__dir__` instead of relative path
+
 ## [0.1.0] - 2024-05-31
 
 ### Added
