@@ -4,8 +4,22 @@
 
 [![Gem Version](https://img.shields.io/gem/v/rails-persona.svg)](https://rubygems.org/gems/rails-persona)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Rails](https://img.shields.io/badge/Rails-7.0%2B-red)
+![SQLite](https://img.shields.io/badge/SQLite-compatible-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-compatible-blue)
+![Stable](https://img.shields.io/badge/stable-0.2.7-brightgreen)
 
 **rails-persona** is a lightweight Rails gem that adds first-class behavioral tracking directly to your ActiveRecord models. Unlike [ahoy](https://github.com/ankane/ahoy), which is focused on HTTP visit and page-view tracking, rails-persona is built for **model-level action tracking** — understanding *what your users actually do* in your app, not just what pages they visit.
+
+---
+
+## Compatibility
+
+| | Version |
+|---|---|
+| Ruby | >= 2.7 |
+| Rails | >= 6.0 (tested on 7.0) |
+| Database | SQLite3, PostgreSQL |
 
 ---
 
@@ -28,7 +42,7 @@
 ## Installation
 
 ```ruby
-gem "rails-persona"
+gem "rails-persona", "~> 0.2.7"
 ```
 
 ```bash
@@ -207,7 +221,6 @@ Persona::Pruner.prune_older_than(60)
 Add to a scheduled job (e.g. `whenever` or Sidekiq-Cron):
 
 ```ruby
-# lib/tasks/persona.rake
 namespace :persona do
   desc "Prune old persona events"
   task prune: :environment do
