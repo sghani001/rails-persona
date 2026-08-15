@@ -277,7 +277,7 @@ end
 
 ## Contributing
 
-Bug reports and pull requests welcome at https://github.com/sghani001/rails-persona.
+Bug reports and pull requests welcome at https://github.com/dev-syedghani/rails-persona.
 
 ## License
 
